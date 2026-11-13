@@ -8,14 +8,16 @@ Página estática (HTML + CSS + um pouco de JS) no estilo Linktree, com a identi
 index.html      # conteúdo e links
 styles.css      # visual (paleta no topo, em :root)
 script.js       # copiar e-mail, luz no hover, fallback do avatar, ano do rodapé
-assets/avatar.png
+assets/avatar.jpg     # foto (384×384, recortada no rosto)
+assets/og.jpg         # prévia ao compartilhar o link (1200×630)
+assets/favicon-*.png  # ícones da aba / tela inicial
 ```
 
 ## Como editar
 
 - **Links e textos**: em `index.html`.
 - **Cores**: no bloco `:root` no topo de `styles.css` (`--bg`, `--card`, `--purple` etc.).
-- **Foto**: substitua `assets/avatar.png`. Se a nova foto já for quadrada e centrada no rosto, remova o `transform: scale(...)` de `.avatar img` em `styles.css`.
+- **Foto**: substitua `assets/avatar.jpg` por uma imagem quadrada já recortada no rosto (384×384 é suficiente).
 
 ## Rodar localmente
 
